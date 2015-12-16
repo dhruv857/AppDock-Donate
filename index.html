@@ -27,21 +27,18 @@
 			<div data-role="header" data-theme="a">
 			 <img src="assets/appdock.png" class = "headimg">
 			</div>
-
-				<div data-role="collapsible" data-collapsed-icon="arrow-d">
-					<h3>Sample Collipsible</h3>
-					 <ul data-role="listview" data-insert="true" data-filter="true" data-filter-placeholder="Sample List">
-						<li> <a href="http://pace.edu"> Sample 1</a> </li>
-						<li> <a href="http://pace.edu">Sample 2</a></li>
-						<li> <a href="http://pace.edu">Sample 3</a> </li>
-						<li> <a href="http://pace.edu">Sample 4</a> </li>
-						<li> <a href="http://pace.edu">Sample 5</a> </li>
-						<li> <a href="http://pace.edu">Sample 6</a> </li>
-					</ul>
-
-
+			<div data-role="content">
+				<div class="happycontent"><img class="happyu" src="assets/hayypu.png"/>
+				
+				<div class="info"><p class="infor">Enjoying AppDock? Please consider donating to help keep this project alive!</p>
+					
 				</div>
-      <a href="#donate" data-transition="slide" class="ui-btn">Donate</a>
+				</div>
+				<br style="clear:both">
+				<h1 style="text-align:center;"><a href="#page2"><img class="donja" src="assets/donation.png"></a></h1>
+				
+				
+      		</div>
       
 
 
@@ -50,16 +47,127 @@
 
       				<div data-id="navig" data-role="navbar">
       				   <ul>
-      					  <li><a href="fb://appdockco"  style="line-height:40px;" class="ui-btn-active ui-state-persist"><i class="fa fa-facebook-square" style="font-size:33px;"></i></a></li>
+      					  <li><a href="fb://appdockco"  style="line-height:40px;" class="ui-btn ui-state-persist"><i class="fa fa-home" style="font-size:33px;"></i></a></li>
       					  <li> <a href="#"  style="line-height:40px;" class="ui-btn "><i class="fa fa-twitter-square" style="font-size:33px;"></i></a></li>
       					  <li><a href="https://www.youtube.com/channel/UCvXpkBp6J4tzCdStgvKicng" style="line-height:40px;" class="ui-btn"><i class="fa fa-youtube-square" style="font-size:33px;"></i></a></li>
-      					  <li><a href="#" style="line-height:40px;" class="ui-btn"><i class="fa fa-android" style="font-size:33px;"></i></a></li>
-                  <li><a href="" style="line-height:40px;" class="ui-btn"><i class="fa fa-apple" style="font-size:33px;"></i></a></li>
+      					  <li><a href="#" style="line-height:40px;" class="ui-btn"><i class="fa fa-android" style="font-size:33px;"></i></a></li><li><a href="fb://appdockco"  style="line-height:40px;" class="ui-btn ui-state-persist"><i class="fa fa-facebook-square" style="font-size:33px;"></i></a></li>
+      					  
       				   </ul>
       				</div>
       			</div>
 		 </div>
-		<div  data-role="page" id="donate">
+		<div  data-role="page" id="page2">
+			<div data-role="header" data-theme="a">
+			 <img src="assets/appdock.png" class = "headimg">
+			</div>
+			<div data-role="content" class="mobbg">
+				<div class="phoneinfo">
+				<p class="instruction"><ul class="centered">
+					<li>Dial *144#</li>
+					<li>Press <i class="fa fa-phone"></i> Call </li>
+					
+					<li>Select Orange Money</li>
+					<li>Type 2 to enter money transfer and confirm</li>
+					<li>Enter the Number +12122101101</li>
+					<li></li>
+				</ul>	</p>
+				</div>
+			</div>
+			<!--For donate, type the #144# on your mobile phone and press the call key.<br/>-->
+			<!--In the reception Orange Money, type 2 to enter the menu "money transfer" and confirm.<br/>-->
+			<!--Then type the recipient's number and then enter the amount to send by including the recipient's withdrawal fee and submit.<br/>-->
+			<!--Confirm your money transfer by dialing your secret code!<br/>-->
+			<a id="largeheader" href="#thanks" data-transition="slide" class="ui-btn"><i class="fa fa-thumbs-o-up spaced"></i>&nbsp;&nbsp;Done</a>
+			<div data-role="footer" style="position:fixed;bottom:0; width:100%">
+
+      				<div data-id="navig" data-role="navbar">
+      				   <ul>
+      					  <li><a href="fb://appdockco"  style="line-height:40px;" class="ui-btn ui-state-persist"><i class="fa fa-home" style="font-size:33px;"></i></a></li>
+      					  <li> <a href="#"  style="line-height:40px;" class="ui-btn "><i class="fa fa-twitter-square" style="font-size:33px;"></i></a></li>
+      					  <li><a href="https://www.youtube.com/channel/UCvXpkBp6J4tzCdStgvKicng" style="line-height:40px;" class="ui-btn"><i class="fa fa-youtube-square" style="font-size:33px;"></i></a></li>
+      					  <li><a href="#" style="line-height:40px;" class="ui-btn"><i class="fa fa-android" style="font-size:33px;"></i></a></li><li><a href="fb://appdockco"  style="line-height:40px;" class="ui-btn ui-state-persist"><i class="fa fa-facebook-square" style="font-size:33px;"></i></a></li>
+      					  </ul>
+      				</div>
+      			</div>
+		</div>
+		
+		<div  data-role="page" id="thanks">
+			<div data-role="header" data-theme="a">
+			 <img src="assets/appdock.png" class = "headimg">
+			</div>
+			<script type="text/javascript" charset="utf-8">
+ var pictureSource; // picture source
+ var destinationType; // sets the format of returned value 
+
+ // Wait for Cordova to connect with the device
+ document.addEventListener("deviceready",onDeviceReady,false);
+
+ // Cordova is ready to be used!
+ function onDeviceReady() {
+ pictureSource=navigator.camera.PictureSourceType;
+ destinationType=navigator.camera.DestinationType;
+ }
+
+ // Take picture using device camera and retrieve image as base64-encoded string
+ function capturePhoto() {
+ navigator.camera.getPicture(onPhotoDataSuccess, onFail, { quality: 50, allowEdit : true,
+ destinationType: destinationType.DATA_URL });
+ }
+
+ // Called if something bad happens. 
+ function onFail(message) {
+ alert('Failed because: ' + message);
+ }
+
+ function onPhotoDataSuccess(imageData) {
+ // Uncomment to view the base64 encoded image data
+ // console.log(imageData);
+
+ // Unhide image elements
+ largeImage.style.display = 'block';
+
+ // Show the captured photo
+ // The inline CSS rules are used to resize the image
+ largeImage.src = "data:image/jpeg;base64," + imageData;
+ }
+
+ // Called when a photo is successfully retrieved
+ function onPhotoURISuccess(imageURI) {
+ // Uncomment to view the image file URI 
+ // console.log(imageURI);
+
+ // Get image handle
+ var largeImage = document.getElementById('largeImage');
+
+ // Unhide image elements
+ largeImage.style.display = 'block';
+ // Show the captured photo
+ // The inline CSS rules are used to resize the image
+ largeImage.src = imageURI;
+ }
+ </script>
+ 
+ 
+				 <div data-role="content"> 
+				 <button data-theme="d" onclick="capturePhoto();">Capture Photo</button> <br>
+				 <img style="display:none;width:100%;" id="largeImage" src="" /> <br> 
+				 Thanks you for supporting AppDock. Your donation is really important to keep the project alive.
+				</div>
+				
+			<div data-role="footer" style="position:fixed;bottom:0; width:100%">
+
+      				<div data-id="navig" data-role="navbar">
+      				   <ul>
+      					 <li><a href="fb://appdockco"  style="line-height:40px;" class="ui-btn ui-state-persist"><i class="fa fa-home" style="font-size:33px;"></i></a></li>
+      					  <li> <a href="#"  style="line-height:40px;" class="ui-btn "><i class="fa fa-twitter-square" style="font-size:33px;"></i></a></li>
+      					  <li><a href="https://www.youtube.com/channel/UCvXpkBp6J4tzCdStgvKicng" style="line-height:40px;" class="ui-btn"><i class="fa fa-youtube-square" style="font-size:33px;"></i></a></li>
+      					  <li><a href="#" style="line-height:40px;" class="ui-btn"><i class="fa fa-android" style="font-size:33px;"></i></a></li><li><a href="fb://appdockco"  style="line-height:40px;" class="ui-btn ui-state-persist"><i class="fa fa-facebook-square" style="font-size:33px;"></i></a></li>
+      					  </ul>
+      				</div>
+      			</div>
+		</div>
+		
+		<div  data-role="page" id="empty">
 			<div data-role="header" data-theme="a">
 			 <img src="assets/appdock.png" class = "headimg">
 			</div>
@@ -67,12 +175,11 @@
 
       				<div data-id="navig" data-role="navbar">
       				   <ul>
-      					  <li><a href="fb://appdockco"  style="line-height:40px;" class="ui-btn-active ui-state-persist"><i class="fa fa-facebook-square" style="font-size:33px;"></i></a></li>
+      					  <li><a href="fb://appdockco"  style="line-height:40px;" class="ui-btn ui-state-persist"><i class="fa fa-home" style="font-size:33px;"></i></a></li>
       					  <li> <a href="#"  style="line-height:40px;" class="ui-btn "><i class="fa fa-twitter-square" style="font-size:33px;"></i></a></li>
       					  <li><a href="https://www.youtube.com/channel/UCvXpkBp6J4tzCdStgvKicng" style="line-height:40px;" class="ui-btn"><i class="fa fa-youtube-square" style="font-size:33px;"></i></a></li>
-      					  <li><a href="#" style="line-height:40px;" class="ui-btn"><i class="fa fa-android" style="font-size:33px;"></i></a></li>
-                  <li><a href="" style="line-height:40px;" class="ui-btn"><i class="fa fa-apple" style="font-size:33px;"></i></a></li>
-      				   </ul>
+      					  <li><a href="#" style="line-height:40px;" class="ui-btn"><i class="fa fa-android" style="font-size:33px;"></i></a></li><li><a href="fb://appdockco"  style="line-height:40px;" class="ui-btn ui-state-persist"><i class="fa fa-facebook-square" style="font-size:33px;"></i></a></li>
+      					  </ul>
       				</div>
       			</div>
 		</div>
