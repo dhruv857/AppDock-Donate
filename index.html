@@ -2,190 +2,168 @@
 <html>
    <head>
       <title>AppDock</title>
-
-	  <meta name="viewport" content="width=device-width, initial-scale=1">
-
+      <meta name="viewport" content="width=device-width, initial-scale=1">
       <style>#map-page, #map-canvas { width: 100%; height: 70%; padding: 0; }</style>
-
-	  <link rel="stylesheet" href="themes/appdock.min.css" />
-	  <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
-	  <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="css/font-awesome.min.css" />
-
+      <link rel="stylesheet" href="themes/appdock.min.css" />
+      <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+      <link rel="stylesheet" href="css/main.css" />
+      <link rel="stylesheet" href="css/font-awesome.min.css" />
       <link rel="stylesheet" href="https://kfportalvhds89qk2l6g22s8.blob.core.windows.net/cdn/jquery.mobile.structure-1.4.5.min.css" />
-	  <script src="https://kfportalvhds89qk2l6g22s8.blob.core.windows.net/cdn/jquery-2.1.4.min.js"></script>
+      <script src="https://kfportalvhds89qk2l6g22s8.blob.core.windows.net/cdn/jquery-2.1.4.min.js"></script>
       <script src="https://kfportalvhds89qk2l6g22s8.blob.core.windows.net/cdn/jquery.mobile-1.4.5.min.js"></script>
-
-	 <!-- <script src="main.js"></script>-->
+      <!-- <script src="main.js"></script>-->
    </head>
-
    <body>
-
-	   <!-- Page 1 Home -->
-
-	  <div  data-role="page" id="mainpage">
-			<div data-role="header" data-theme="a">
-			 <img src="assets/appdock.png" class = "headimg">
-			</div>
-			<div data-role="content">
-				<div class="happycontent"><img class="happyu" src="assets/hayypu.png"/>
-				
-				<div class="info"><p class="infor">Enjoying AppDock? Please consider donating to help keep this project alive!</p>
-					
-				</div>
-				</div>
-				<br style="clear:both">
-				<h1 style="text-align:center;"><a href="#page2"><img class="donja" src="assets/donation.png"></a></h1>
-				
-				
-      		</div>
-      
-
-
-
-      <div data-role="footer" style="position:fixed;bottom:0; width:100%">
-
-      				<div data-id="navig" data-role="navbar">
-      				   <ul>
-      					  <li><a href="fb://appdockco"  style="line-height:40px;" class="ui-btn ui-state-persist"><i class="fa fa-home" style="font-size:33px;"></i></a></li>
-      					  <li> <a href="#"  style="line-height:40px;" class="ui-btn "><i class="fa fa-twitter-square" style="font-size:33px;"></i></a></li>
-      					  <li><a href="https://www.youtube.com/channel/UCvXpkBp6J4tzCdStgvKicng" style="line-height:40px;" class="ui-btn"><i class="fa fa-youtube-square" style="font-size:33px;"></i></a></li>
-      					  <li><a href="#" style="line-height:40px;" class="ui-btn"><i class="fa fa-android" style="font-size:33px;"></i></a></li><li><a href="fb://appdockco"  style="line-height:40px;" class="ui-btn ui-state-persist"><i class="fa fa-facebook-square" style="font-size:33px;"></i></a></li>
-      					  
-      				   </ul>
-      				</div>
-      			</div>
-		 </div>
-		<div  data-role="page" id="page2">
-			<div data-role="header" data-theme="a">
-			 <img src="assets/appdock.png" class = "headimg">
-			</div>
-			<div data-role="content" class="mobbg">
-				<div class="phoneinfo">
-				<p class="instruction"><ul class="centered">
-					<li>Dial *144#</li>
-					<li>Press <i class="fa fa-phone"></i> Call </li>
-					
-					<li>Select Orange Money</li>
-					<li>Type 2 to enter money transfer and confirm</li>
-					<li>Enter the Number +12122101101</li>
-					<li></li>
-				</ul>	</p>
-				</div>
-			</div>
-			<!--For donate, type the #144# on your mobile phone and press the call key.<br/>-->
-			<!--In the reception Orange Money, type 2 to enter the menu "money transfer" and confirm.<br/>-->
-			<!--Then type the recipient's number and then enter the amount to send by including the recipient's withdrawal fee and submit.<br/>-->
-			<!--Confirm your money transfer by dialing your secret code!<br/>-->
-			<a id="largeheader" href="#thanks" data-transition="slide" class="ui-btn"><i class="fa fa-thumbs-o-up spaced"></i>&nbsp;&nbsp;Done</a>
-			<div data-role="footer" style="position:fixed;bottom:0; width:100%">
-
-      				<div data-id="navig" data-role="navbar">
-      				   <ul>
-      					  <li><a href="fb://appdockco"  style="line-height:40px;" class="ui-btn ui-state-persist"><i class="fa fa-home" style="font-size:33px;"></i></a></li>
-      					  <li> <a href="#"  style="line-height:40px;" class="ui-btn "><i class="fa fa-twitter-square" style="font-size:33px;"></i></a></li>
-      					  <li><a href="https://www.youtube.com/channel/UCvXpkBp6J4tzCdStgvKicng" style="line-height:40px;" class="ui-btn"><i class="fa fa-youtube-square" style="font-size:33px;"></i></a></li>
-      					  <li><a href="#" style="line-height:40px;" class="ui-btn"><i class="fa fa-android" style="font-size:33px;"></i></a></li><li><a href="fb://appdockco"  style="line-height:40px;" class="ui-btn ui-state-persist"><i class="fa fa-facebook-square" style="font-size:33px;"></i></a></li>
-      					  </ul>
-      				</div>
-      			</div>
-		</div>
-		
-		<div  data-role="page" id="thanks">
-			<div data-role="header" data-theme="a">
-			 <img src="assets/appdock.png" class = "headimg">
-			</div>
-			<script type="text/javascript" charset="utf-8">
- var pictureSource; // picture source
- var destinationType; // sets the format of returned value 
-
- // Wait for Cordova to connect with the device
- document.addEventListener("deviceready",onDeviceReady,false);
-
- // Cordova is ready to be used!
- function onDeviceReady() {
- pictureSource=navigator.camera.PictureSourceType;
- destinationType=navigator.camera.DestinationType;
- }
-
- // Take picture using device camera and retrieve image as base64-encoded string
- function capturePhoto() {
- navigator.camera.getPicture(onPhotoDataSuccess, onFail, { quality: 50, allowEdit : true,
- destinationType: destinationType.DATA_URL });
- }
-
- // Called if something bad happens. 
- function onFail(message) {
- alert('Failed because: ' + message);
- }
-
- function onPhotoDataSuccess(imageData) {
- // Uncomment to view the base64 encoded image data
- // console.log(imageData);
-
- // Unhide image elements
- largeImage.style.display = 'block';
-
- // Show the captured photo
- // The inline CSS rules are used to resize the image
- largeImage.src = "data:image/jpeg;base64," + imageData;
- }
-
- // Called when a photo is successfully retrieved
- function onPhotoURISuccess(imageURI) {
- // Uncomment to view the image file URI 
- // console.log(imageURI);
-
- // Get image handle
- var largeImage = document.getElementById('largeImage');
-
- // Unhide image elements
- largeImage.style.display = 'block';
- // Show the captured photo
- // The inline CSS rules are used to resize the image
- largeImage.src = imageURI;
- }
- </script>
- 
- 
-				 <div data-role="content"> 
-				 <button data-theme="d" onclick="capturePhoto();">Capture Photo</button> <br>
-				 <img style="display:none;width:100%;" id="largeImage" src="" /> <br> 
-				 Thanks you for supporting AppDock. Your donation is really important to keep the project alive.
-				</div>
-				
-			<div data-role="footer" style="position:fixed;bottom:0; width:100%">
-
-      				<div data-id="navig" data-role="navbar">
-      				   <ul>
-      					 <li><a href="fb://appdockco"  style="line-height:40px;" class="ui-btn ui-state-persist"><i class="fa fa-home" style="font-size:33px;"></i></a></li>
-      					  <li> <a href="#"  style="line-height:40px;" class="ui-btn "><i class="fa fa-twitter-square" style="font-size:33px;"></i></a></li>
-      					  <li><a href="https://www.youtube.com/channel/UCvXpkBp6J4tzCdStgvKicng" style="line-height:40px;" class="ui-btn"><i class="fa fa-youtube-square" style="font-size:33px;"></i></a></li>
-      					  <li><a href="#" style="line-height:40px;" class="ui-btn"><i class="fa fa-android" style="font-size:33px;"></i></a></li><li><a href="fb://appdockco"  style="line-height:40px;" class="ui-btn ui-state-persist"><i class="fa fa-facebook-square" style="font-size:33px;"></i></a></li>
-      					  </ul>
-      				</div>
-      			</div>
-		</div>
-		
-		<div  data-role="page" id="empty">
-			<div data-role="header" data-theme="a">
-			 <img src="assets/appdock.png" class = "headimg">
-			</div>
-			<div data-role="footer" style="position:fixed;bottom:0; width:100%">
-
-      				<div data-id="navig" data-role="navbar">
-      				   <ul>
-      					  <li><a href="fb://appdockco"  style="line-height:40px;" class="ui-btn ui-state-persist"><i class="fa fa-home" style="font-size:33px;"></i></a></li>
-      					  <li> <a href="#"  style="line-height:40px;" class="ui-btn "><i class="fa fa-twitter-square" style="font-size:33px;"></i></a></li>
-      					  <li><a href="https://www.youtube.com/channel/UCvXpkBp6J4tzCdStgvKicng" style="line-height:40px;" class="ui-btn"><i class="fa fa-youtube-square" style="font-size:33px;"></i></a></li>
-      					  <li><a href="#" style="line-height:40px;" class="ui-btn"><i class="fa fa-android" style="font-size:33px;"></i></a></li><li><a href="fb://appdockco"  style="line-height:40px;" class="ui-btn ui-state-persist"><i class="fa fa-facebook-square" style="font-size:33px;"></i></a></li>
-      					  </ul>
-      				</div>
-      			</div>
-		</div>
-
-
-
-	 </body>
+      <!-- Page 1 Home -->
+      <div  data-role="page" id="mainpage">
+         <div data-role="header" data-theme="a">
+            <img src="assets/appdock.png" class = "headimg">
+         </div>
+         <div data-role="content">
+            <div class="happycontent">
+               <img class="happyu" src="assets/hayypu.png"/>
+               <div class="info">
+                  <p class="infor">Enjoying AppDock? Please consider donating to help keep this project alive!</p>
+               </div>
+            </div>
+            <br style="clear:both">
+            <h1 style="text-align:center;"><a href="#page2"><img class="donja" src="assets/donation.png"></a></h1>
+         </div>
+         <div data-role="footer" style="position:fixed;bottom:0; width:100%">
+            <div data-id="navig" data-role="navbar">
+               <ul>
+                  <li><a href="fb://appdockco"  style="line-height:40px;" class="ui-btn ui-state-persist"><i class="fa fa-home" style="font-size:33px;"></i></a></li>
+                  <li> <a href="#"  style="line-height:40px;" class="ui-btn "><i class="fa fa-twitter-square" style="font-size:33px;"></i></a></li>
+                  <li><a href="https://www.youtube.com/channel/UCvXpkBp6J4tzCdStgvKicng" style="line-height:40px;" class="ui-btn"><i class="fa fa-youtube-square" style="font-size:33px;"></i></a></li>
+                  <li><a href="#" style="line-height:40px;" class="ui-btn"><i class="fa fa-android" style="font-size:33px;"></i></a></li>
+                  <li><a href="fb://appdockco"  style="line-height:40px;" class="ui-btn ui-state-persist"><i class="fa fa-facebook-square" style="font-size:33px;"></i></a></li>
+               </ul>
+            </div>
+         </div>
+      </div>
+      <div  data-role="page" id="page2">
+         <div data-role="header" data-theme="a">
+            <img src="assets/appdock.png" class = "headimg">
+         </div>
+         <div data-role="content" class="mobbg">
+            <div class="phoneinfo">
+               <p class="instruction">
+               <ul class="centered">
+                  <li>Dial *144#</li>
+                  <li>Press <i class="fa fa-phone"></i> Call </li>
+                  <li>Select Orange Money</li>
+                  <li>Type 2 to enter money transfer and confirm</li>
+                  <li>Enter the Number +12122101101</li>
+                  <li></li>
+               </ul>
+               </p>
+            </div>
+         </div>
+         <!--For donate, type the #144# on your mobile phone and press the call key.<br/>-->
+         <!--In the reception Orange Money, type 2 to enter the menu "money transfer" and confirm.<br/>-->
+         <!--Then type the recipient's number and then enter the amount to send by including the recipient's withdrawal fee and submit.<br/>-->
+         <!--Confirm your money transfer by dialing your secret code!<br/>-->
+         <a id="largeheader" href="#thanks" data-transition="slide" class="ui-btn"><i class="fa fa-thumbs-o-up spaced"></i>&nbsp;&nbsp;Done</a>
+         <div data-role="footer" style="position:fixed;bottom:0; width:100%">
+            <div data-id="navig" data-role="navbar">
+               <ul>
+                  <li><a href="fb://appdockco"  style="line-height:40px;" class="ui-btn ui-state-persist"><i class="fa fa-home" style="font-size:33px;"></i></a></li>
+                  <li> <a href="#"  style="line-height:40px;" class="ui-btn "><i class="fa fa-twitter-square" style="font-size:33px;"></i></a></li>
+                  <li><a href="https://www.youtube.com/channel/UCvXpkBp6J4tzCdStgvKicng" style="line-height:40px;" class="ui-btn"><i class="fa fa-youtube-square" style="font-size:33px;"></i></a></li>
+                  <li><a href="#" style="line-height:40px;" class="ui-btn"><i class="fa fa-android" style="font-size:33px;"></i></a></li>
+                  <li><a href="fb://appdockco"  style="line-height:40px;" class="ui-btn ui-state-persist"><i class="fa fa-facebook-square" style="font-size:33px;"></i></a></li>
+               </ul>
+            </div>
+         </div>
+      </div>
+      <div  data-role="page" id="thanks">
+         <div data-role="header" data-theme="a">
+            <img src="assets/appdock.png" class = "headimg">
+         </div>
+         <div data-role="content">
+         <script type="text/javascript" charset="utf-8">
+            var pictureSource; // picture source
+            var destinationType; // sets the format of returned value 
+            
+            // Wait for Cordova to connect with the device
+            document.addEventListener("deviceready",onDeviceReady,false);
+            
+            // Cordova is ready to be used!
+            function onDeviceReady() {
+            pictureSource=navigator.camera.PictureSourceType;
+            destinationType=navigator.camera.DestinationType;
+            }
+            
+            // Take picture using device camera and retrieve image as base64-encoded string
+            function capturePhoto() {
+            navigator.camera.getPicture(onPhotoDataSuccess, onFail, { quality: 50, allowEdit : true,
+            destinationType: destinationType.DATA_URL });
+            }
+            
+            // Called if something bad happens. 
+            function onFail(message) {
+            alert('Failed because: ' + message);
+            }
+            
+            function onPhotoDataSuccess(imageData) {
+            // Uncomment to view the base64 encoded image data
+            // console.log(imageData);
+            
+            // Unhide image elements
+            largeImage.style.display = 'block';
+            
+            // Show the captured photo
+            // The inline CSS rules are used to resize the image
+            largeImage.src = "data:image/jpeg;base64," + imageData;
+            }
+            
+            // Called when a photo is successfully retrieved
+            function onPhotoURISuccess(imageURI) {
+            // Uncomment to view the image file URI 
+            // console.log(imageURI);
+            
+            // Get image handle
+            var largeImage = document.getElementById('largeImage');
+            
+            // Unhide image elements
+            largeImage.style.display = 'block';
+            // Show the captured photo
+            // The inline CSS rules are used to resize the image
+            largeImage.src = imageURI;
+            }
+         </script>
+        
+            <button data-theme="d" onclick="capturePhoto();">Capture Photo</button> <br>
+            <img style="display:none;width:100%;" id="largeImage" src="" /> <br> 
+            Thanks you for supporting AppDock. Your donation is really important to keep the project alive.
+         </div>
+         <div data-role="footer" style="position:fixed;bottom:0; width:100%">
+            <div data-id="navig" data-role="navbar">
+               <ul>
+                  <li><a href="fb://appdockco"  style="line-height:40px;" class="ui-btn ui-state-persist"><i class="fa fa-home" style="font-size:33px;"></i></a></li>
+                  <li> <a href="#"  style="line-height:40px;" class="ui-btn "><i class="fa fa-twitter-square" style="font-size:33px;"></i></a></li>
+                  <li><a href="https://www.youtube.com/channel/UCvXpkBp6J4tzCdStgvKicng" style="line-height:40px;" class="ui-btn"><i class="fa fa-youtube-square" style="font-size:33px;"></i></a></li>
+                  <li><a href="#" style="line-height:40px;" class="ui-btn"><i class="fa fa-android" style="font-size:33px;"></i></a></li>
+                  <li><a href="fb://appdockco"  style="line-height:40px;" class="ui-btn ui-state-persist"><i class="fa fa-facebook-square" style="font-size:33px;"></i></a></li>
+               </ul>
+            </div>
+         </div>
+      </div>
+      <div  data-role="page" id="empty">
+         <div data-role="header" data-theme="a">
+            <img src="assets/appdock.png" class = "headimg">
+         </div>
+         <div data-role="footer" style="position:fixed;bottom:0; width:100%">
+            <div data-id="navig" data-role="navbar">
+               <ul>
+                  <li><a href="fb://appdockco"  style="line-height:40px;" class="ui-btn ui-state-persist"><i class="fa fa-home" style="font-size:33px;"></i></a></li>
+                  <li> <a href="#"  style="line-height:40px;" class="ui-btn "><i class="fa fa-twitter-square" style="font-size:33px;"></i></a></li>
+                  <li><a href="https://www.youtube.com/channel/UCvXpkBp6J4tzCdStgvKicng" style="line-height:40px;" class="ui-btn"><i class="fa fa-youtube-square" style="font-size:33px;"></i></a></li>
+                  <li><a href="#" style="line-height:40px;" class="ui-btn"><i class="fa fa-android" style="font-size:33px;"></i></a></li>
+                  <li><a href="fb://appdockco"  style="line-height:40px;" class="ui-btn ui-state-persist"><i class="fa fa-facebook-square" style="font-size:33px;"></i></a></li>
+               </ul>
+            </div>
+         </div>
+      </div>
+   </body>
 </html>
-
